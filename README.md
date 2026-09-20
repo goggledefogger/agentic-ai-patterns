@@ -1,8 +1,9 @@
-# Lessons from building with agents
+# agentic-ai-patterns
 
-229 lessons from one person building software with coding agents, mostly
-the hard way. Each file in `patterns/` is one lesson: what happened, why it
-happens, and when to expect it again.
+**Lessons from building with agents.** 229 of them, from one person
+building software with coding agents, mostly the hard way. Each file in
+`patterns/` is one lesson: what happened, why it happens, and when to expect
+it again.
 
 This is a map, not a standard. Nothing here is a rule you should adopt because
 it is written down. These are the shapes that kept recurring in one person's
@@ -28,7 +29,8 @@ you have had. They are deliberately short and they cross-reference each other.
 Clone it next to your own notes as a read-only store your agent can search:
 
 ```bash
-git clone <this repo> ~/reference/agent-lessons
+git clone https://github.com/goggledefogger/agentic-ai-patterns.git \
+  ~/reference/agentic-ai-patterns
 ```
 
 Point your agent at that directory and tell it to consult the patterns before
@@ -45,8 +47,8 @@ can pick it up from there instead.
 files get revised when a later incident proves an earlier write-up wrong, so a
 file's date is when it was first written, not when it was last right.
 
-The tools half of this work — skills, scripts, templates — stays in a private
-companion repo (`goggledefogger/obsidian-claude`) for now.
+The tools half of this work — skills, scripts, templates — stays in the
+author's private companion repo for now.
 
 ## Contributing
 
