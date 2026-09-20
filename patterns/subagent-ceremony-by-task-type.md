@@ -1,7 +1,7 @@
 ---
 type: pattern
 date: "2026-05-02"
-source: A course content engine vault — first-proof execution session 2026-05-02. Validated empirically across a 23-task plan split between mechanical-config tasks (Phase 1) and content-judgment tasks (Phase 3). ADR at `a doc`.
+source: A course content engine vault — first-proof execution session 2026-05-02. Validated empirically across a 23-task plan split between mechanical-config tasks (Phase 1) and content-judgment tasks (Phase 3). ADR at a doc.
 tags:
   - subagents
   - workflow

@@ -13,7 +13,7 @@ tags:
 
 How to set up and run an Obsidian vault with Claude Code as your working memory. Written for a fresh Claude Code session inheriting an existing vault or bootstrapping a new one.
 
-It names a few helper scripts in passing (`theme-vault.sh`, `workspace-identity.py`, a repo digest). Those live in a private companion repo and are not shipped here; each section describes the mechanism well enough to rebuild in a few lines.
+It names a few helper scripts in passing (`theme-vault.sh`, `workspace-identity.py`, a repo digest). Those live in the author's private companion repo and are not shipped here; each section describes the mechanism well enough to rebuild in a few lines.
 
 ## State of recommendations
 
@@ -508,7 +508,7 @@ When wrapping another repo, add a table to `CLAUDE.md` that makes the boundary e
 
 ### Multi-repo observatory variant
 
-> Inspired by a course participant's fund-automation system, a production system where 3 people run a VC fund with 5 AI agent personas, 12+ scheduled tasks, and a voice-to-knowledge pipeline. The repo (`a private repo`) is no longer public.
+> Inspired by a course participant's fund-automation system, a production system where 3 people run a VC fund with 5 AI agent personas, 12+ scheduled tasks, and a voice-to-knowledge pipeline. The repo (a private repo) is no longer public.
 
 When monitoring many repos at once (e.g., advising someone with multiple projects), group them under a single parent directory and use one symlink:
 
@@ -655,7 +655,7 @@ Two deliberate asymmetries in what `audit` treats as a finding. A directory with
 
 ### Say the name, not the folder name
 
-Color tells you which window from across the room. It does not tell you *which of the two the course projects this is* — and folder names are no help when the private planning vault is `the course` and the repo shared with a co-instructor is `the course repo`. `label` puts a human name where you actually look:
+Color tells you which window from across the room. It does not tell you *which of the two the course projects this is* — and folder names are no help when the private planning vault is the course and the repo shared with a co-instructor is the course repo. `label` puts a human name where you actually look:
 
 ```bash
 scripts/workspace-identity.py label ~/vaults/course 'Course - My Private Vault'
@@ -741,7 +741,7 @@ If a behavior keeps coming back despite your instruction, your override is too v
 
 ## Advanced Patterns: Automation Vaults
 
-> Patterns in this section were derived from a course participant's fund-automation system, a production system where 3 people run a VC fund with the throughput of 10, powered by 5 AI agent personas, 12+ scheduled tasks, and a voice-to-knowledge pipeline. The repo (`a private repo`) is no longer public.
+> Patterns in this section were derived from a course participant's fund-automation system, a production system where 3 people run a VC fund with the throughput of 10, powered by 5 AI agent personas, 12+ scheduled tasks, and a voice-to-knowledge pipeline. The repo (a private repo) is no longer public.
 
 These patterns apply when an Obsidian vault wraps a system with automated pipelines, scheduled agents, or multiple data sources. Not every vault needs them, but when you're advising on or building complex automation, they're battle-tested.
 

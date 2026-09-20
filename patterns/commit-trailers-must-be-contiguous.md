@@ -74,4 +74,4 @@ That asymmetry is the argument for verifying early. The check is free before the
 
 ## Source
 
-Found 2026-07-31 auditing agent attribution on `a work skills repo`. The bd-roadmap commits carried a single trailer and parsed fine. The discovery-brief commits carried two, written as separate `-m` flags, and `git interpret-trailers --parse` returned only the session link.
+Found 2026-07-31 auditing agent attribution on a work skills repo. The bd-roadmap commits carried a single trailer and parsed fine. The discovery-brief commits carried two, written as separate `-m` flags, and `git interpret-trailers --parse` returned only the session link.

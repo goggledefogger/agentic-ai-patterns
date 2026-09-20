@@ -42,4 +42,4 @@ Neither number was wrong by accident. The root cause sits one level up: the docs
 
 ## Source
 
-The personal agent `a personal skills repo` walk-and-talk skill (phone bridge launch) and `the personal agent` day-review skill (cold-start server launch), both replacing a flat `sleep` with a bounded poll on the service's real readiness signal. `spec-walk-readiness-polling`, 2026-08-07.
+The personal agent a personal skills repo walk-and-talk skill (phone bridge launch) and the personal agent day-review skill (cold-start server launch), both replacing a flat `sleep` with a bounded poll on the service's real readiness signal. `spec-walk-readiness-polling`, 2026-08-07.

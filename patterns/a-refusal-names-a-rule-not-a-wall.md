@@ -60,4 +60,4 @@ Any unattended agent: cron-woken sessions, CI runners, queue workers, sandboxed 
 
 ## Source
 
-`the agent board repo` #49, #52, #53 and `the household-agent repo` PRs #259–#261, 2026-08-20 to 2026-08-22. Mechanism confirmed in `hermes_cli/config_defaults.py` (`cron_mode: deny` — "block the command and let the agent find another way") and `tools/approval.py` (a cron approval context returns `approved: False` with no human to ask), not inferred from the key name.
+the agent board repo #49, #52, #53 and the household-agent repo PRs #259–#261, 2026-08-20 to 2026-08-22. Mechanism confirmed in `hermes_cli/config_defaults.py` (`cron_mode: deny` — "block the command and let the agent find another way") and `tools/approval.py` (a cron approval context returns `approved: False` with no human to ask), not inferred from the key name.

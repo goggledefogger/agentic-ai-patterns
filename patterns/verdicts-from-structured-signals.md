@@ -62,7 +62,7 @@ And at every level: **enumerate the pass states and fail closed on anything else
 
 The hierarchy above reads as structured-vs-prose, and the sites it found were all prose. There is a second version that evades that framing entirely: the code *is* reading a structured signal, correctly, and that signal is simply **coarser than the distinction being drawn**. Coarseness collapses distinct conditions into one verdict, and no amount of parsing rigour recovers them, because the information was never in the field being read.
 
-A model-liveness probe in `the household-agent repo` classified on HTTP status:
+A model-liveness probe in the household-agent repo classified on HTTP status:
 
 ```bash
 if   [[ "$code" == "200" ]]; then  echo "  ✓ $model"

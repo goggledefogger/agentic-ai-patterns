@@ -90,7 +90,7 @@ The fallback above is run-level — it rescues a wedged run. The structural fix 
 
 ## The executable form
 
-This pattern is encoded as the `integrating-local-models` skill (`a personal skills repo`): `probe.sh` for the rung-1/2/3 emit check and `probe-opencode.sh` for the sufficient end-to-end execution check (real file + commit verified on disk).
+This pattern is encoded as the `integrating-local-models` skill (a personal skills repo): `probe.sh` for the rung-1/2/3 emit check and `probe-opencode.sh` for the sufficient end-to-end execution check (real file + commit verified on disk).
 
 ## Adjacent Patterns
 

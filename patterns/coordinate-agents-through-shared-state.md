@@ -52,4 +52,4 @@ Durable (survives restarts and sleeps), no chatter loop, human-in-the-loop (a pe
 
 ## Source
 
-- The course `status` board: append-only `status` comments, a `disagreement` label instead of a board picking a winner, and a `board_sync` derivation that groups logins by side. The side model was added after a stale `the agent's account` (agent's own account) report read as a disagreement with a newer `<personal-account>` (human's account) one — same side, false conflict.
+- The course `status` board: append-only `status` comments, a `disagreement` label instead of a board picking a winner, and a `board_sync` derivation that groups logins by side. The side model was added after a stale the agent's account (agent's own account) report read as a disagreement with a newer `<personal-account>` (human's account) one — same side, false conflict.

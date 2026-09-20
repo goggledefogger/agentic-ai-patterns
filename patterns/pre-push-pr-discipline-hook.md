@@ -112,7 +112,7 @@ Skip for:
 
 ## Example from the participant's system
 
-`.githooks/pre-push` (PR #52, commit `eb1f2cd`). Fires on `the workspace repo`, `the sensor service`, `the memory pipeline`, `a private org/an airtable-mcp repo`, `a private org/carta-mcp`. Forensic commit message names 6 prior incidents the hook would have caught. Used `core.hooksPath = .githooks` for zero-friction install.
+`.githooks/pre-push` (PR #52, commit `eb1f2cd`). Fires on the workspace repo, the sensor service, the memory pipeline, `a private org/an airtable-mcp repo`, `a private org/carta-mcp`. Forensic commit message names 6 prior incidents the hook would have caught. Used `core.hooksPath = .githooks` for zero-friction install.
 
 The hook explicitly handles fast-forward cases: when a PR is merged via the GitHub UI, the local main can fast-forward to a commit that already exists on origin/main. The hook fetches origin's view of main first and only checks commits that aren't already there. This means "merging a PR via GitHub then pushing local sync" passes cleanly — only genuinely-new direct work gets blocked.
 
@@ -124,7 +124,7 @@ The hook explicitly handles fast-forward cases: when a PR is merged via the GitH
 
 ## How to Adopt
 
-1. Copy `.githooks/pre-push` from `the workspace repo` into your repo (or the obsidian-claude template repo as a default).
+1. Copy `.githooks/pre-push` from the workspace repo into your repo (or a template repo of your own as a default).
 2. Edit the repo allowlist for your specific repos.
 3. Edit the BUILD-STATUS-only allowlist for your generated artifacts (or remove if you have none).
 4. Run `git config core.hooksPath .githooks` (or copy `scripts/install-hooks.sh` from the participant's system).

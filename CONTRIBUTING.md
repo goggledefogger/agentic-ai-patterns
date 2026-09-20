@@ -34,6 +34,7 @@ hash is not.
 
 ## Workflow
 
-Fork, branch, open a pull request against `master` with a clear description.
-One new pattern is a small PR and lands quickly. A batch, a rewrite, or a
-change to the guides gets a closer read. No force-pushing to `master`.
+Fork `goggledefogger/agentic-ai-patterns`, branch, and open a pull request
+against `master` with a clear description. One new pattern is a small PR and
+lands quickly. A batch, a rewrite, or a change to the guides gets a closer
+read. No force-pushing to `master`.

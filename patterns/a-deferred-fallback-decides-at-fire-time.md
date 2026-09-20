@@ -96,7 +96,7 @@ Two things make this the lazy fix rather than a new subsystem:
 
 ## Source
 
-`a personal skills repo` walk-and-talk `speak.sh` grace-watcher, spec
+a personal skills repo walk-and-talk `speak.sh` grace-watcher, spec
 `spec-walk-goodbye-before-teardown`, commit `eb0139c`, 2026-08-07. Watchers
 armed per spoken line to cover a bridge dying mid-walk instead fired after a
 clean session end and texted the walk's own parting line back to the walker

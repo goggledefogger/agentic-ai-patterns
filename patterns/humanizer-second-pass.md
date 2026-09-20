@@ -36,7 +36,7 @@ Before drafting anything external-facing, read `Reference/your-voice.md` first.
 After the voice pass, run the `humanizer` skill as a second scrub to catch generic AI-writing patterns (em-dash overuse, rule-of-three, inflated symbolism, "serves as," etc.) that voice rules don't cover. Voice first, humanizer second, always in that order.
 ```
 
-3. Write your voice guide (see the obsidian-claude `agent-personality-guide.md` for a template).
+3. Write your voice guide (see this repo's `agent-personality-guide.md` for a template).
 4. When drafting, both passes run automatically.
 
 ## What Humanizer Catches

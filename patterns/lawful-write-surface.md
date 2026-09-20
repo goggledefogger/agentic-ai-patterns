@@ -61,7 +61,7 @@ Don't reach for it when the agent's edits are genuinely wrong, or when the chang
 
 ## Source
 
-`the household-agent repo` — `scripts/check-battery-prices.py` (`load_vendors`, `add_vendor`, `write_local_vendors`) and `scripts/battery-vendors.json`, 2026-08-01. Prior art it should have copied from the start: `skills/shared/notebooklm/scripts/ask.py:35` `load_registry()`. Incident and the parked plan it revives: `_bmad-output/planning-artifacts/plan-2026-08-01-agent-write-surfaces-runtime-overlays-and-proposal-queue.md`, `docs/fleet-script-ownership-proposal.md` (PARKED 2026-04-10).
+the household-agent repo — `scripts/check-battery-prices.py` (`load_vendors`, `add_vendor`, `write_local_vendors`) and `scripts/battery-vendors.json`, 2026-08-01. Prior art it should have copied from the start: `skills/shared/notebooklm/scripts/ask.py:35` `load_registry()`. Incident and the parked plan it revives: `_bmad-output/planning-artifacts/plan-2026-08-01-agent-write-surfaces-runtime-overlays-and-proposal-queue.md`, `docs/fleet-script-ownership-proposal.md` (PARKED 2026-04-10).
 
 Related: `registry-based-monitoring.md` (the registry shape), `memory-substrate-selection.md` (structured truth plus derived view), `sensitivity-tiered-access-control.md` and `deterministic-orchestrator-over-agent-plumbing.md` (why the rule wasn't the fix), `unattended-run-discipline.md` (the boundary this pattern deliberately softens for *data*, and keeps for code).
 

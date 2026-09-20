@@ -82,7 +82,7 @@ The same brief admits its own limits in §10 Open Questions: *"the 90% coverage 
 
 ## How to Adopt
 
-1. Find one the author-authored doc with known drift potential — start with the obsidian-claude guide's "State of recommendations" section, the course syllabus, or any project README listing "current architecture."
+1. Find one self-authored doc with known drift potential — start with the Claude Code + Obsidian guide's "State of recommendations" section, the course syllabus, or any project README listing "current architecture."
 2. Write the warning preamble using the template above. Make the failure mode specific.
 3. Identify three commands that verify any specific claim. Test them yourself — they should work without context.
 4. State the doc's role explicitly: *"this is a thinking tool. <X> is ground truth."*

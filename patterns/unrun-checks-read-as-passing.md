@@ -61,7 +61,7 @@ There is a denominator trap here worth naming. Counting the run's *own reported*
 
 "An unexecuted check is UNKNOWN, never green" is right, and applied without a second distinction it destroys itself.
 
-A session-start digest in `the household-agent repo` — a block that replays every flagged line from a ~350-line health run, built precisely so flags stop being missed — printed `✓ nothing flagged this run` on a run where one of two hosts sat behind an expired auth prompt and its whole section was skipped: no messages, no health, no drift, no cron. A green verdict over a host nobody looked at. The same shape as the CI case one layer up: the digest counted flags and never asked what it had covered.
+A session-start digest in the household-agent repo — a block that replays every flagged line from a ~350-line health run, built precisely so flags stop being missed — printed `✓ nothing flagged this run` on a run where one of two hosts sat behind an expired auth prompt and its whole section was skipped: no messages, no health, no drift, no cron. A green verdict over a host nobody looked at. The same shape as the CI case one layer up: the digest counted flags and never asked what it had covered.
 
 The obvious fix is to raise UNKNOWN on any uninspected host. That would have been wrong, because the *other* host in that fleet is offline permanently and by design. Flagging it would have fired a warning on every run forever — and a warning that fires every run is read as decoration within a week. The rule would have been technically satisfied and practically dead, inside the very digest built to stop things being missed.
 

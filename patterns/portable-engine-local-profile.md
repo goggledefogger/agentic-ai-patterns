@@ -81,4 +81,4 @@ The trap: adoption looks complete because the visible surfaces (dashboards, stat
 ## Source
 
 
-Extracted during the creation of `light-ops` across `a personal skills repo` and the personal agent ambient lighting orchestration project.
+Extracted during the creation of `light-ops` across a personal skills repo and the personal agent ambient lighting orchestration project.
