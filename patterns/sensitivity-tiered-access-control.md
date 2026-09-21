@@ -121,7 +121,7 @@ The hook is cheap (reads at most 2KB), short-circuits early on non-md / non-vaul
 
 Folder-level rules that the agent should honor. Pure honor-system. Useful for things hooks don't cover well: how to think about commits, how to scope skill behavior, what to avoid even when allowed.
 
-Example folder CLAUDE.md ([from the work vault's `personal/role-design/CLAUDE.md`](), private):
+Example folder CLAUDE.md (from a private work vault's `role-design/CLAUDE.md`):
 
 ```markdown
 ## Hard rules for any session in this folder
