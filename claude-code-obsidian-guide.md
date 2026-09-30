@@ -27,6 +27,7 @@ Current posture on the bigger calls the guide makes. Lightly opinionated, episte
 - Per-vault Catppuccin theming so you always know which vault you're in
 - obsidian-git wired up for ambient backup + multi-device sync
 - Priority hierarchy (scripts > obsidian markdown > skills > docs > memory) as the default tie-breaker when there's more than one right place for a thing
+- Set the vault up for a team even when you are one: shared skills the next session can load, a handoff split by how often each part changes (`patterns/put-a-thing-where-it-is-read-at-the-frequency-it-changes.md`), checks the agent cannot edit (`patterns/the-agent-that-checks-the-box-must-not-own-the-check.md`), and a way for the agent to see its own result (`patterns/give-the-agent-its-own-eyes.md`). The outside articulation is Nate B. Jones' six principles for agent setups (2026-09), the local evidence is those three patterns
 
 **Works but with caveats:**
 
