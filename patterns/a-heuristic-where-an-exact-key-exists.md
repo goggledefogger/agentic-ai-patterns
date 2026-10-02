@@ -43,6 +43,12 @@ The exact key was one call away and had been the whole time — `who_is.py "<nam
 
 The inverted severity holds exactly: a name-as-keyword query succeeds when someone's address contains their name and fails for everyone else — right on the easy case, wrong on the general one.
 
+## Sighting four: display text as a join key (2026-10-02)
+
+A dashboard matched each installed shortcut card to its store listing by the card's phrase text. The card and the listing had shared a stable id the whole time, and the icons were already keyed by it. Rewording one listing would have orphaned every card already installed from it, and nothing would have errored: the card would just lose its link to the store.
+
+Now the match is id first, with the phrase kept as a fallback for old cards and old catalogs that predate the id. Same inverted severity: the text match is right until someone edits the copy, which is exactly when a store is being improved.
+
 ## The Pattern
 
 **1. Spend sixty seconds looking for the exact key before writing the proxy.** `env | grep -i <tool>`, the ids already in the data, a manifest, the record's own fields. The cost of looking is trivial against a wrong answer that never raises.
