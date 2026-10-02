@@ -70,8 +70,33 @@ reachable without the thing being true; here, the passing branch is reachable
 while the thing is technically true and useless. Both come from specifying the
 check instead of the outcome.
 
+## Sighting two: the closing ask of a standing prompt (2026-10-02)
+
+A dashboard's skill store installs a skill by sending a fixed 3-line message
+into a chat. The install worked in 38 seconds. The reply after it did not: a
+4-item recap of the plan the member had read on the consent sheet seconds
+earlier, then a "what you can change later" list that ended in a terminal
+uninstall command and a settings screen the app does not have.
+
+The cause was the message's last sentence: *"tell me what you did and what I
+can change later"*. Every install would have answered it the same way. The fix
+was that one sentence, now asking for a line or two that it is in and how to
+try it, a recap only where a step went differently, and no terminal commands
+unless asked. A real run of the new wording gave 2 short paragraphs.
+
+Two things this adds:
+
+- **The closing ask of a standing prompt is the template for every reply it
+  produces.** When replies share a shape problem, read the prompt's last line
+  before changing anything else
+- **Do not ask an agent to re-narrate what a consent screen already showed.**
+  The member just read it. A recap is only news where something went
+  differently
+
 ## Related
 
+- [[the-author-sees-bugs-no-member-will]], how the same install was triaged
+  down to this one sentence
 - [[announce-the-move-in-the-old-room]] — the failure this control was built for
 - [[decorative-gate]] — a check whose pass does not mean what it claims
 - [[one-authority-for-repeating-behaviors]] — why the welcome has one home

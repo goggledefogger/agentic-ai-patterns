@@ -35,8 +35,21 @@ This is cheap. It is one grep per key against a tree you already have on disk, a
 
 Every upgrade where the plan lists config keys or feature flags to flip, especially when you deliberately pin behind HEAD. Do it before the adoption step, not after a soak quietly proves nothing. The same check applies to any "set this flag to get behavior X" instruction sourced from docs or a blog rather than from the code you installed.
 
+## Sighting two: a doc that describes one mode (2026-10-02)
+
+The same mistake, with no config key in it. A CLI's docs describe its background plugin auto-update for "an interactive session". An agent read that and inferred the app's non-interactive way of starting the CLI never auto-updates. It reported the gap as a risk ("may never get the update") and was lining up a server-side update job.
+
+Before building, a helper read the shipped CLI. The non-interactive path calls the same background housekeeping function, gated only on a bare-mode flag and the updater-off environment variables, after a random delay of up to 10 minutes. So a long-lived process gets the update and a one-shot run usually exits first. No job was needed, and the plan of record already held a chosen, unbuilt design for the rest. The check took minutes. The job would have been code to maintain that duplicated the vendor's own behaviour.
+
+What it adds:
+
+- **A doc that describes one mode says nothing about the other.** Silence is not a "no"
+- **Before building around an inferred gap in a dependency, read the dependency or run it.** The installed artifact is the primary source here too
+- **Label a doc-inference as an inference when you report it.** "The docs only mention interactive sessions" is honest. "May never get the update" reads as a finding
+
 ## Adjacent Patterns
 
+- `scan-prior-art-before-building-infra.md` would also have stopped the job: the prior art was the vendor's own updater and a design already on file
 - `system-understanding-protocol.md` is the general discipline, atomic citations and a source pass over the aggregate docs. This is the sharp instance for config adoption: cite the installed tree, not the proposal
 - `grill-the-plan.md` should ask this question during the adversarial pass: does each named key exist in the version we are actually shipping
 

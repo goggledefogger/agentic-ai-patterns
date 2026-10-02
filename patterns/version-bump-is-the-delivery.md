@@ -25,4 +25,10 @@ Treat the distribution cache as part of the release, with three legs:
 
 The general form beyond plugins: any version-pinned distribution channel (pinned Docker tags, vendored copies, lockfiles, app-store builds) has a "merged but undelivered" gap, and the fix is always the same three legs — bump rides the change, update path is two commands, something on the user's side can name the gap.
 
+## Sighting two: a marketplace with no release step (2026-10-02)
+
+A public skills marketplace had no written release step and no check. The platform docs also discourage setting the version in both the plugin manifest and the marketplace entry, because the manifest wins silently when they differ. So a bump in one file and not the other ships nothing, with no error.
+
+The fix was a short "Update a skill" section in the README and a dependency-free CI script that fails when the 2 files disagree, or when a skill's files change without its version changing. The script carries its own self-test. The branch it runs on has no protection yet, so the check is not required and a red run can still merge (`unenforced-red-becomes-the-baseline.md`).
+
 Sibling pattern: `verify-adoption-against-installed-source.md` is the consumer-side mirror (grep the pinned artifact before adopting config keys). This is the producer side: make sure what you shipped can actually arrive.
