@@ -58,6 +58,21 @@ Interactive CLIs distinguish *fold* (the message joins the running turn) from
 that streams the CLI 1:1 inherits that ambiguity at exactly the close point.
 The grace timer is how you stay correct without the CLI telling you.
 
+## Except after a Stop
+
+A Stop cancels the debt. The same keep-it-open rule, applied after an
+interrupt, keeps the chat working under the member's Stop: the interrupt ends
+the current turn, the CLI takes the next queued message off its own queue, and
+the open stream faithfully carries it. Pressing Stop looks broken, and it took
+a second press, about a minute later, to halt it (2026-10-02).
+
+An interrupt is a statement about everything queued, not just the turn that is
+running. So on Stop, zero the owed count before the result arrives so the
+stream closes at that result, and if the producer starts the queued unit
+anyway, interrupt that one too. Do not drop the queued input silently, though;
+hand it back to the user unsent ([[hold-vs-drop-on-interrupted-input]]). Their
+words are the one thing in the queue they cannot regenerate.
+
 ## Also
 
 Strip inherited env that silently changes child behavior. A dashboard started
@@ -70,6 +85,8 @@ child-env strip list beside the credentials you already remove — see
 
 ## Related
 
+- [[hold-vs-drop-on-interrupted-input]] — what to do with the queued input a
+  Stop cancels: hold it for the user, never run it and never drop it silently
 - [[a-refused-reconnect-ends-the-stream]] — the other way an event stream goes
   quiet while looking merely unchanged; both fail invisibly on the dev machine
 - [[never-trade-the-screen-for-a-promise]] — the consumer-side discipline for
