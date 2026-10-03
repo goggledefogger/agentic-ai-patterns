@@ -144,6 +144,7 @@ MIT licensed.
 - [Ask-Challenge-Verify-Correct](patterns/ask-challenge-verify-correct.md)
 - [At-Least-Once Needs a Poison Ledger](patterns/at-least-once-needs-a-poison-ledger.md)
 - [Atomic State Writes (Temp-File + Rename)](patterns/atomic-state-writes.md)
+- [Bounded Searches Prevent Harness Async Demotion](patterns/bounded-searches-prevent-harness-async-demotion.md)
 - [Capture Before You Answer](patterns/capture-before-you-answer.md)
 - [Choosing a Memory Substrate — Wiki vs Structured Store](patterns/memory-substrate-selection.md)
 - [Churn-Free Generated Artifacts](patterns/churn-free-generated-artifacts.md)
