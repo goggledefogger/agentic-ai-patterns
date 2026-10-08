@@ -54,4 +54,4 @@ An orphan commit has no parents, so the public repo starts with nothing behind i
 
 ## Source
 
-A catalogue repo made public on 2026-10-07. A chained command published the full history for about a minute. Making it private, then moving it aside and creating a fresh repo under the same name, was the remedy that actually removed the commits from view.
+A catalogue repo made public on 2026-10-07. A chained command published the full history for about a minute. Making it private, then moving it aside and creating a fresh repo under the same name, was the remedy that actually removed the commits from view. The leaked copy was deleted later the same day, once the owner granted the delete scope.
