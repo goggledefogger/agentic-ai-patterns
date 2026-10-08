@@ -100,6 +100,8 @@ Quality observations: zero downstream issues traced to skipped ceremony on mecha
 
 The same task-type signal that decides *how much ceremony* can decide *which model*. Observed in a course participant's home-agent system (2026-06-13): across one window's commits, generative feature work stayed on the strongest model (Opus), while the meticulous, rule-heavy governance/cleanup work — a doc truth-sync, a churn-free-rendering fix, a single-source-config consolidation, an unattended-run-discipline pass — was co-authored by a newer, faster model (Fable 5). The split mirrors this pattern's logic: mechanical/rule-bound work tolerates (and benefits from the speed of) a lighter-ceremony, lighter-model path; open-ended judgment work earns the heavier model. Decide model tier off the same `mechanical` vs `content`/`judgment` label you're already applying. (Caveat: route by *empirical* fit, not by a fixed table — a "mechanical" task with a sharp correctness edge may still want the strong model.)
 
+A later run (2026-10-07) used a three-way split: judgment and voice went to the strongest model, specified edits to a mid-tier model, and sweeps and reads to the cheapest. The controller still read the diff and looked at the screenshots itself before calling any helper's work done, because a cheap helper's report is exactly the thing the spot-check exists to verify.
+
 ## How to Adopt
 
 1. Encode the split in the project's CLAUDE.md (per `wire-into-existing-flows.md`). One short paragraph: mechanical → implementer-only, content → full ceremony, default mechanical with spot-check escalation.

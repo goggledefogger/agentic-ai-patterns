@@ -1,6 +1,6 @@
 # agentic-ai-patterns
 
-**Lessons from building with agents.** 229 of them, from one person
+**Lessons from building with agents.** 241 of them, from one person
 building software with coding agents, mostly the hard way. Each file in
 `patterns/` is one lesson: what happened, why it happens, and when to expect
 it again.
@@ -68,6 +68,7 @@ MIT licensed.
 - [A Count Inherits the Freshness of the Replica It Was Counted From](patterns/replica-freshness-travels-with-the-count.md)
 - [A Deferred Fallback Decides at Fire Time, Not Arm Time](patterns/a-deferred-fallback-decides-at-fire-time.md)
 - [A Derived Location Is a Guess, Not an Address](patterns/a-derived-location-is-a-guess-not-an-address.md)
+- [A Derived Public Dataset Leaks Through Its Provenance](patterns/a-derived-public-dataset-leaks-through-its-provenance.md)
 - [A dry run that derives will drift](patterns/a-dry-run-that-derives-will-drift.md)
 - [A Fake Can Only Fail the Ways You Have Already Seen](patterns/a-fake-can-only-fail-the-ways-you-have-seen.md)
 - [A Fast Answer Is A Suspect Answer](patterns/a-fast-answer-is-a-suspect-answer.md)
@@ -79,6 +80,7 @@ MIT licensed.
 - [A Guard's Evidence Must Outlive the Failure It Detects](patterns/guard-evidence-outlives-the-failure.md)
 - [A Health Check That Never Exercises the Work](patterns/health-check-that-never-exercises.md)
 - [A Healthy List Is Not a Healthy Server](patterns/a-healthy-list-is-not-a-healthy-server.md)
+- [A Helper's Negative Result Reports Its Setup](patterns/a-helpers-negative-result-reports-its-setup.md)
 - [A Heuristic Where an Exact Key Exists](patterns/a-heuristic-where-an-exact-key-exists.md)
 - [A Known-Broken Lane Must Stay Visible and Must Never Page](patterns/known-broken-must-not-page.md)
 - [A Live Reference Outlives Its Owner, and Everyone Keeps Traversing It](patterns/live-reference-outlives-its-owner.md)
@@ -90,6 +92,7 @@ MIT licensed.
 - [A Partial Read Proves Presence, Never Absence](patterns/a-partial-read-proves-presence-not-absence.md)
 - [A Plausible Cause Ends the Search](patterns/plausible-cause-ends-the-search.md)
 - [A Pooled Balance Couples Fate — Cap Each Consumer](patterns/pooled-balance-couples-fate.md)
+- [A Publish Step Gets Its Own Command Line](patterns/a-publish-step-gets-its-own-command-line.md)
 - [A Push That Asks States the Question, and What a Reply Does](patterns/a-push-that-asks-states-the-question-and-what-a-reply-does.md)
 - [A Recommendation Is Not a Decision](patterns/a-recommendation-is-not-a-decision.md)
 - [A Recovery Hint Must Derive From Its Detector](patterns/a-recovery-hint-must-derive-from-its-detector.md)
@@ -171,6 +174,7 @@ MIT licensed.
 - [Dual-Audience Views Over One Store (Human Brief vs AI-Comprehensive)](patterns/dual-audience-views-over-one-store.md)
 - [Embedded Channels Inherit the Host Document's Read Rate](patterns/embedded-channels-inherit-avoidance.md)
 - [Enforce the Message, Not the Field](patterns/enforce-the-message-not-the-field.md)
+- [Every Display String Is Data](patterns/every-display-string-is-data.md)
 - [External System as Source of Truth, Vault as Pointer](patterns/external-store-as-source-of-truth.md)
 - [External-File Visibility (files Claude creates don't show in Obsidian)](patterns/external-file-visibility.md)
 - [Fetch first then read the tree](patterns/fetch-first-then-read-the-tree.md)
@@ -183,6 +187,7 @@ MIT licensed.
 - [Give the Agent a Lawful Write Surface](patterns/lawful-write-surface.md)
 - [Give the Agent Its Own Eyes](patterns/give-the-agent-its-own-eyes.md)
 - [Give the manager session a fleet view, not the fleet's contents](patterns/multi-session-fleet-awareness.md)
+- [Going Public Starts From an Orphan Commit](patterns/going-public-starts-from-an-orphan-commit.md)
 - [Grammar Parsing Over Text Matching for Detectors](patterns/grammar-parsing-over-text-matching.md)
 - [Graph View Tuning](patterns/graph-view-tuning.md)
 - [Green tests can mirror the same guess](patterns/green-tests-can-mirror-the-same-guess.md)
@@ -247,6 +252,7 @@ MIT licensed.
 - [Settings Follow the Member, Not the Browser](patterns/settings-follow-the-member-not-the-browser.md)
 - [Shared Skill Symlinking (The Distributed Skill Layer)](patterns/shared-skill-symlinking.md)
 - [Shared Tooling Matches Per-Vault Conventions Leniently](patterns/shared-tooling-matches-conventions-leniently.md)
+- [Ship the Public Catalogue With a Private Overlay Beside It](patterns/ship-the-public-catalogue-with-a-private-overlay-beside-it.md)
 - [Silence Is Not Confirmation: An Append-Only Log Has No Present Tense](patterns/silence-is-not-confirmation.md)
 - [Smoke Tests with Real Data](patterns/smoke-tests-with-real-data.md)
 - [Soak-Aware Patch Tests](patterns/soak-aware-patch-tests.md)
