@@ -49,6 +49,10 @@ A dashboard matched each installed shortcut card to its store listing by the car
 
 Now the match is id first, with the phrase kept as a fallback for old cards and old catalogs that predate the id. Same inverted severity: the text match is right until someone edits the copy, which is exactly when a store is being improved.
 
+## Sighting five: a pause as a paragraph break (2026-10-09)
+
+Streamed agent text glued words together across tool calls. A fix was proposed that guessed the break from timing: a 400 ms pause followed by a capital letter starts a new paragraph. But the protocol already declares the boundary, through a tool-completed event, a thought chunk, and a message id. Review rejected the guess: it fails on slow streams and splits "I" mid-thought. The fix reads the declared events in the bridge, where they are still visible.
+
 ## The Pattern
 
 **1. Spend sixty seconds looking for the exact key before writing the proxy.** `env | grep -i <tool>`, the ids already in the data, a manifest, the record's own fields. The cost of looking is trivial against a wrong answer that never raises.
