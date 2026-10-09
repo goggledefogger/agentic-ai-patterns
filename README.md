@@ -79,6 +79,7 @@ MIT licensed.
 - [A Grant the Doctrine Denies Is Reported as a Bug](patterns/a-grant-the-doctrine-denies-is-reported-as-a-bug.md)
 - [A Guard for a Loop That Crosses Reloads Lives Outside Memory](patterns/a-guard-for-a-loop-that-crosses-reloads-lives-outside-memory.md)
 - [A Guard Scoped To The Place, Not The Property](patterns/guard-scoped-to-the-place-not-the-property.md)
+- [A Guard You Lower Is Not a Guard](patterns/a-guard-you-lower-is-not-a-guard.md)
 - [A Guard's Evidence Must Outlive the Failure It Detects](patterns/guard-evidence-outlives-the-failure.md)
 - [A Health Check That Never Exercises the Work](patterns/health-check-that-never-exercises.md)
 - [A Healthy List Is Not a Healthy Server](patterns/a-healthy-list-is-not-a-healthy-server.md)
