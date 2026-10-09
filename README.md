@@ -160,6 +160,7 @@ MIT licensed.
 - [Current-Date Grounding](patterns/current-date-grounding.md)
 - [DataviewJS for Custom UI Dashboards](patterns/dataviewjs-custom-ui.md)
 - [Decision-Doc Pattern (Lightweight ADRs)](patterns/decision-doc-adr.md)
+- [A Deadline Armed by Output Cannot See the Failure That Produces None](patterns/deadline-armed-at-the-send.md)
 - [Declared Presence Beats the Host Clock](patterns/declared-presence-beats-host-clock.md)
 - [Decorative Gate (Anti-Pattern): A Control That Returns "Passed" Without Checking](patterns/decorative-gate.md)
 - [Dedup Anchored at the Head Misses the Tail](patterns/dedup-anchored-at-the-head-misses-the-tail.md)
