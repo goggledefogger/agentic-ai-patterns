@@ -63,6 +63,10 @@ Every fix in this pattern pushes toward *fewer* sends, and the prior generation 
 - [[an-event-is-not-a-cause]] — a lifecycle event mistaken for "the turn ended."
 - [[convergent-standup-sloppy-quits]] — put lifecycle intelligence in start, because quits are where attention already left.
 
+## Sighting: a merge that timed out (2026-10-09)
+
+A pull-request merge command hung for 120 seconds and failed during an outage at the code host. The failure did not say whether the merge had landed. The agent read the pull request's state first, found it still open, then sent the merge once more, and it landed. Read who received, then resend, once.
+
 ## Rule of Thumb
 
 Adding a way to reach someone is half a feature. The other half is how you will know they were already reached — and if that half has no answer, the new channel is a fallback, not a peer.
