@@ -92,6 +92,7 @@ MIT licensed.
 - [A Monitor That Can't Exclude Its Own Exhaust Will Eventually Tell You to Stop Working](patterns/monitor-cannot-see-its-own-exhaust.md)
 - [A New Guard Relocates the Failure Mode of Every Test That Crosses It](patterns/a-new-guard-relocates-every-test-that-crosses-it.md)
 - [A Partial Read Proves Presence, Never Absence](patterns/a-partial-read-proves-presence-not-absence.md)
+- [A Pinned Model ID Retired Upstream](patterns/pinned-model-id-retired-upstream.md)
 - [A Plausible Cause Ends the Search](patterns/plausible-cause-ends-the-search.md)
 - [A Pooled Balance Couples Fate — Cap Each Consumer](patterns/pooled-balance-couples-fate.md)
 - [A Publish Step Gets Its Own Command Line](patterns/a-publish-step-gets-its-own-command-line.md)
