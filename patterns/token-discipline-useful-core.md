@@ -74,7 +74,7 @@ Before adopting any skill that claims a saving, spend 10 minutes:
 
 The rules now travel to helpers. A skill governs only the agent that loaded it, so the 3 rules ride in a short block the parent pastes into each brief, and in a start-of-subagent hook gated on the user having invoked the skill. See `a-ruleset-travels-by-brief-and-by-hook.md`.
 
-On 2026-10-10 a web search could not find the source of the benchmark cited above, the "42-75% saving reversing to 26-39% more expensive" figures. Treat those numbers as unsourced until someone finds it.
+On 2026-10-10 a web search could not find the benchmark cited above, the "42-75% saving reversing to 26-39% more expensive" figures, and this note called them unsourced for a few hours. The source was in this lesson's own list below the whole time: Ponytail's cost verification of 2026-06-17, 30 pooled reps across Haiku, Sonnet and Opus, 26.2% more expensive on gpt-5.4-mini and 38.7% on gpt-5.5. Check your own sources list before calling a number unsourced.
 
 ## Adjacent Patterns
 
