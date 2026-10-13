@@ -22,6 +22,7 @@ A private vault cannot be the source of truth for state that is **shared across 
 
 - **The external system owns the shared STATE; the vault still owns CONTEXT.** The board owns task/roster *status*; the vault keeps planning, notes, per-person nuance. Name that line explicitly or you get the duplication the "one source of truth" rule forbids.
 - **Markdown demotes to a pointer.** A note may reference a board item; it never re-tracks it. An action item written into a living doc is a reminder to *go look at the board*, and the board is truth. (See `memory-substrate-selection.md`: structured store + regenerable view.)
+- **A pointer carries its link and its last sync time.** When a note summarizes something that lives elsewhere (a shared drive folder, a document, an email thread), it keeps three things per source: the summary, a link to the source itself, and when it was last synced. The link says where to look for the truth. The sync time says whether the summary may have gone stale. A summary with neither reads as the truth itself, and nobody can tell when it drifted
 - **Deterministic code owns the writes to structured fields.** The model classifies (task vs person, which workstream); a script performs the write through the system's contract. Never hand-edit a *derived* field — see `deterministic-orchestrator-over-agent-plumbing.md`.
 - **Map the automation boundary BEFORE designing automation.** For any external store, know what is scriptable (CLI/API) vs UI-only. GitHub Projects v2: item membership and field values are scriptable (GraphQL/`gh`); **views and workflows are UI-only** (no API at all). Designing a "set up the board" automation without this map wastes effort on the half that can't be scripted.
 
@@ -56,3 +57,4 @@ One shared surface, no cross-vault syncing, and errors don't compound (any deriv
 ## Source
 
 - The course `status` system: a shared GitHub Project (issues labeled `workstream`, append-only status comments, a generated `STATUS.md`, a derived board) used by both instructors' agents. The board is the humans' surface, `STATUS.md` the text one, the issues the store — three views, one source.
+- A family-estate note built from 2 shared drive folders and 4 email threads: one table of source, link, and last-synced time, so the next letter in the mail can be checked against the folder rather than the summary
