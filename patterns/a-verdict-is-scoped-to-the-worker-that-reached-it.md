@@ -32,6 +32,14 @@ A 60-second stability check passed, repeatedly, on the broken version. It passed
 
 The cure isn't a better assertion, it's proving the existing one is load-bearing: delete the line it guards and confirm the suite goes red. If it stays green, the assertion was checking something that couldn't fail, which is exactly what happened here.
 
+## The Same Shape in a Handoff Note
+
+A chat that runs out of room writes a handoff note for the next chat, and the note is a verdict too. In 2026-10 one called a line in a script "dead". The new chat read that as "the feature is gone" and told the owner so without opening the script. The feature was fine: the line was only unreachable behind a new early exit. The one-word verdict was true where it was reached and wrong once it was carried.
+
+- The handoff says what each thing does, as checked ("the old refresh after the new skip can never run"), never a one-word verdict ("dead refresh line").
+- It marks which facts were checked in that chat and which were themselves handed down.
+- The next chat treats the note's verdicts as leads, and opens the thing before telling anyone what it is.
+
 ## Related
 
 - [[coordinate-agents-through-shared-state]] — the healthy version of two workers sharing state: append-only, attributed by side, disagreement preserved rather than resolved. This pattern is what happens when a shared surface instead lets one side silently overwrite or inherit the other's
