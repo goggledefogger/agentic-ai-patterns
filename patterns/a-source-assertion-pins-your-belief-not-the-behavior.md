@@ -67,6 +67,10 @@ So treat verification language as an assertion that itself needs backing:
 - **If you cannot produce the numbers, do not claim the verification.** "Reasoned, not probed" is a completely respectable comment and it invites exactly the re-check that "verified" forecloses.
 - **When you do re-probe, watch it fail first.** The new test above was run against an unfixed copy and went red, naming the exact line. A guard nobody has seen fail is a guard nobody has tested.
 
+## Sighting: twenty source greps, seven behaviours (2026-10-09)
+
+A dashboard's test file held 20 tests that grepped the app's source for copy strings and function names. They passed whatever the code did. They became 7 behavioural tests by moving two pure functions into the shared library file, where a test can import and call them. One labelled ratchet remains, openly a source assertion, for the place where no seam exists to call.
+
 ## Related
 
 - [[green-tests-can-mirror-the-same-guess]] — the sibling failure: tests written by the same agent as the code confirm the code's inventions. Here the test and the code disagreed with *reality* in the same direction, which is how both stayed green.

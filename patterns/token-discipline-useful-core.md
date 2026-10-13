@@ -70,6 +70,12 @@ Before adopting any skill that claims a saving, spend 10 minutes:
 - **Silent empty output is the failure mode to test for, not the crash.** Scripts that report "selected 0 passages" and exit 0 will be trusted by the next agent that runs them
 - **A skill can be safe and still be wrong.** The one audited here had no network calls, skipped `.env` and secret-named files, and escaped injection markers in its output. Careful authorship says nothing about whether the algorithm works
 
+## Update 2026-10-10
+
+The rules now travel to helpers. A skill governs only the agent that loaded it, so the 3 rules ride in a short block the parent pastes into each brief, and in a start-of-subagent hook gated on the user having invoked the skill. See `a-ruleset-travels-by-brief-and-by-hook.md`.
+
+On 2026-10-10 a web search could not find the benchmark cited above, the "42-75% saving reversing to 26-39% more expensive" figures, and this note called them unsourced for a few hours. The source was in this lesson's own list below the whole time: Ponytail's cost verification of 2026-06-17, 30 pooled reps across Haiku, Sonnet and Opus, 26.2% more expensive on gpt-5.4-mini and 38.7% on gpt-5.5. Check your own sources list before calling a number unsourced.
+
 ## Adjacent Patterns
 
 - `verify-adoption-against-installed-source.md` — the same lesson one level up, grep the artifact you actually installed before adopting a plan's claim about it
