@@ -62,6 +62,7 @@ MIT licensed.
 
 - [A capability contract must name the verb](patterns/a-capability-contract-must-name-the-verb.md)
 - [A Check That Never Ran Reads As Passing](patterns/unrun-checks-read-as-passing.md)
+- [A Clean Exit Is a Stop to Its Supervisor](patterns/a-clean-exit-is-a-stop-to-its-supervisor.md)
 - [A Clone Shares the Identity Your Gate Scopes By](patterns/a-clone-shares-the-identity-your-gate-scopes-by.md)
 - [A Closed Ticket Is Not a Home for an Open Decision](patterns/a-closed-ticket-is-not-a-home-for-an-open-decision.md)
 - [A Convention Needed Once Is a Convention Skipped](patterns/a-convention-needed-once-is-a-convention-skipped.md)
