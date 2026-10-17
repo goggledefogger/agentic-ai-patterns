@@ -115,6 +115,7 @@ MIT licensed.
 - [A Second Writer Satisfies Your Gate: Evidence in a Shared Store Names No Actor](patterns/a-second-writer-satisfies-your-gate.md)
 - [A Self-Report Must Not End What It Is Reporting On](patterns/self-report-must-not-end-what-it-reports-on.md)
 - [A Small Model Chooses, It Does Not Rewrite](patterns/a-small-model-chooses-it-does-not-rewrite.md)
+- [A Small Model Moves the File and Drops the Behavior](patterns/a-small-model-moves-the-file-and-drops-the-behavior.md)
 - [A Source Assertion Pins Your Belief, Not the Behavior](patterns/a-source-assertion-pins-your-belief-not-the-behavior.md)
 - [A stack of proxy watchers is one watcher](patterns/a-stack-of-proxy-watchers-is-one-watcher.md)
 - [A Stale Pointer Doesn't Go Quiet, It Asserts — and Cleanup Can't Cross Repos](patterns/stale-pointer-asserts-confidently.md)
