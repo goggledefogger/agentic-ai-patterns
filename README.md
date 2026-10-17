@@ -60,6 +60,7 @@ MIT licensed.
 
 ## The patterns
 
+- [A Bare Prohibition Reads as No Tools](patterns/a-bare-prohibition-reads-as-no-tools.md)
 - [A capability contract must name the verb](patterns/a-capability-contract-must-name-the-verb.md)
 - [A Check That Never Ran Reads As Passing](patterns/unrun-checks-read-as-passing.md)
 - [A CI Secret Without a Vault Row Dies Unseen: Register a Credential When You Mint It](patterns/a-ci-secret-without-a-vault-row-dies-unseen.md)
