@@ -36,6 +36,7 @@ For each deadline in the system, ask what event starts its clock. If the answer 
 
 ## Related
 
+- [[local-model-agentic-tool-calling]] (trap 9): a first-word deadline must be sized to the backend's prompt-eval speed. A fixed 3-minute deadline cancels a local model mid-read of a large prompt
 - [[liveness-is-measured-at-the-ear]]: a watchdog fed by the wrong signal certifies the wrong thing. This one is fed by a signal that only exists when things are going well
 - [[a-stream-that-ends-its-unit-may-still-owe-a-turn]]: the other end of a turn's lifetime, closing too early instead of too late
 - [[at-least-once-needs-a-poison-ledger]]: why the close does not retry

@@ -77,6 +77,21 @@ Two inventory traps, both measured 2026-08-01 on the 16GB machine, both of which
 
 Same shape as trap 2's `tools: true` caveat, one layer down: the *declared* capability and the *measured* one are different facts, and so are the *owned* inventory and the *running* one.
 
+### 9. Count prompt tokens before blaming the model (measured 2026-10-16, M1 Pro 16 GB, 9B Q4)
+
+A local chat was cancelled by the harness's 180 s first-word guard. The model was not stuck and memory was fine (70% free): llama-server was still reading a ~34k-token prompt at about 200 tokens a second, so the first word was due at roughly 170 s plus generation. The cheap check that found it was the server log's prompt token count for the request, read before blaming the model or the memory.
+
+**Rule of thumb: prompt tokens / prompt-eval tok/s = seconds of silence before the first word.** Budget about 200 tok/s for a 9B Q4 model on an M1 Pro 16 GB.
+
+None of the 34k was the conversation. A second-brain dashboard's chat carried 13 MCP search servers x 11 tools, about 143 tool schemas (roughly 20k tokens); the brain's 42 KB instruction file appended as rules (roughly 10k); and the harness's hidden title agent made a second call on the same model (17 s) before the reply. Fixes, in order of leverage:
+
+1. Run the chat in the folder it actually works in (a repository), not the brain, so it loads that folder's small instructions
+2. A per-scope tool policy: a small model in a repository gets no MCP servers at all, and a narrow agent (grep/glob/read allowed, edit and bash ask)
+3. Size the first-word timeout to the backend's prompt-eval speed, not to a cloud engine's silence (10 minutes for local here), and keep Stop as the human's way out ([[deadline-armed-at-the-send]])
+4. Turn off the harness's side calls on the local model (title generation)
+
+Security corollary: once a chat's working directory can be a repository, disable the harness's project-level config loading (OpenCode: `OPENCODE_DISABLE_PROJECT_CONFIG=1`), or a cloned repo's config can add plugins, servers and permissions nobody chose.
+
 ## Gate the agentic path (don't let it default on)
 
 - **Completion tier** (single-shot text) is safe on any model that returns real text — wire it freely.
