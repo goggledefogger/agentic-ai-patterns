@@ -30,3 +30,5 @@ A consumer of an agent-to-agent task queue re-attempts what did not finish — t
 ## Relation to arrival accounting
 
 `no-delivery-without-arrival-accounting` covers the send side: how the producer learns its output landed. This pattern is the consume side: how the worker avoids doing landed work twice, and how a task that can never succeed stops burning money. A queue needs both; each was built in the same lane a week apart because having one made the other's absence visible.
+
+The ledger above counts attempts. To record *why* a step fails so the next attempt can route around it, see [`a-roadblock-ledger-the-runner-writes.md`](a-roadblock-ledger-the-runner-writes.md).

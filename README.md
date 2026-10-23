@@ -109,6 +109,7 @@ MIT licensed.
 - [A Required Slug Invents the Missing Half](patterns/a-required-slug-invents-the-missing-half.md)
 - [A Resumed Session Answers From Yesterday](patterns/a-resumed-session-answers-from-yesterday.md)
 - [A Ritual Is a Skill Plus a Wrapper](patterns/a-ritual-is-a-skill-plus-a-wrapper.md)
+- [A Roadblock Ledger the Runner Writes, the Worker Reads](patterns/a-roadblock-ledger-the-runner-writes.md)
 - [A Rule Must Live Where Matching Happens First](patterns/a-rule-must-live-where-matching-happens-first.md)
 - [A Ruleset Travels by Brief and by Hook: A Prose Skill Governs Only the Agent That Invoked It](patterns/a-ruleset-travels-by-brief-and-by-hook.md)
 - [A Seam Is Decided Where Its Signal Is Visible](patterns/a-seam-is-decided-where-its-signal-is-visible.md)
