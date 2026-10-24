@@ -167,6 +167,7 @@ MIT licensed.
 - [Churn-Free Generated Artifacts](patterns/churn-free-generated-artifacts.md)
 - [Commit Trailers Must Be Contiguous](patterns/commit-trailers-must-be-contiguous.md)
 - [Consent Needs the Diff](patterns/consent-needs-the-diff.md)
+- [Contacts: One List for the Many, a Note for the Few](patterns/contacts-one-list-for-the-many-notes-for-the-few.md)
 - [Convergent Stand-Up, Sloppy Quits](patterns/convergent-standup-sloppy-quits.md)
 - [Coordinate Agents Through Shared State, Not Messages](patterns/coordinate-agents-through-shared-state.md)
 - [Count the Source, Not the Survivors](patterns/count-the-source-not-the-survivors.md)
