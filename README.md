@@ -84,6 +84,7 @@ MIT licensed.
 - [A Guard Scoped To The Place, Not The Property](patterns/guard-scoped-to-the-place-not-the-property.md)
 - [A Guard You Lower Is Not a Guard](patterns/a-guard-you-lower-is-not-a-guard.md)
 - [A Guard's Evidence Must Outlive the Failure It Detects](patterns/guard-evidence-outlives-the-failure.md)
+- [A Harness Connector Outranks Your Script Unless a Shared Rule Says Otherwise](patterns/a-harness-connector-outranks-your-script.md)
 - [A Health Check That Never Exercises the Work](patterns/health-check-that-never-exercises.md)
 - [A Healthy List Is Not a Healthy Server](patterns/a-healthy-list-is-not-a-healthy-server.md)
 - [A Helper's Negative Result Reports Its Setup](patterns/a-helpers-negative-result-reports-its-setup.md)
