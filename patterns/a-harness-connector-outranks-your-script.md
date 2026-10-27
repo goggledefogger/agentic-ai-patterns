@@ -34,6 +34,10 @@ When the host (a harness, an IDE, a dashboard, a hosted chat app) ships its own 
 4. **Fix the skill's own routing table and trigger words.** The trigger should match how people actually ask ("see the email I sent", "verify that email"), not only "scan my inbox".
 5. **Count skill invocation over time.** Invocations per 100 sessions and context at first reply are cheap to compute from transcripts, and they are the only way to see crowding.
 
+## Second Case: The Browser
+
+Same day, same agent. Asked to open a browser and work alongside the user, it found its usual browser automation locked (another chat held the same browser profile) and fell back to a vendor-specific browser extension that drives the user's personal browser. The user had turned that extension off. The project's routing table still listed it as the route for "a page that needs the user's logins", so the stale row won. The fix had the same shape: the routing table now names the host app's own built-in browser as the first route (a separate page per chat, with its own logins). A locked profile is treated as contention, not a reason to switch tools: open a separate session through a CLI that any engine can run, and ask before reusing the locked one. The extension's tools are denied in settings, so the rule doesn't rest on prose alone.
+
 ## Why It Works
 
 The model picks from what is in view at the moment of choice. A rule in the always-read file is in view at that moment under every engine. A rule in an uninvoked skill or a Claude-only hook is not. Pointing at a script rather than a host tool makes the first route portable, and naming the fallback keeps the connector useful without letting it win by default.
