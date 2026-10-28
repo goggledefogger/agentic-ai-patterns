@@ -36,7 +36,7 @@ the envelope — and no idea what the receiver could *do*.
 
 1. **Put the receiver's execution ceiling in the sender's contract, where the
    verb is named.** Not in the receiver's docs, which the sender never reads at
-   post time. `dispatch_sheila.py`'s usage now says: *a task is a judgment or a
+   post time. The dispatch script's usage now says: *a task is a judgment or a
    pointer, never a command — her board session cannot run one.* Same move as
    `a-capability-contract-must-name-the-verb`, from the other direction: that
    one names what the foreign agent *may* do; this names what the peer
