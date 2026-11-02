@@ -216,6 +216,7 @@ MIT licensed.
 - [Instrumentation With No Reader Is a Decision to Collect Evidence and Never Look](patterns/instrumentation-with-no-reader.md)
 - [Interaction Machinery Belongs to Its Path](patterns/interaction-machinery-belongs-to-its-path.md)
 - [Latched State Needs a Reconciler: A Flag Set by Events Will Eventually Be Set Forever](patterns/latched-state-needs-a-reconciler.md)
+- [Literal Values in Agent-Facing Examples Get Copied](patterns/literal-values-in-agent-examples-get-copied.md)
 - [Liveness Is Measured at the Ear](patterns/liveness-is-measured-at-the-ear.md)
 - [Living-Doc Refresh Ritual](patterns/living-doc-refresh-ritual.md)
 - [LLM Wiki Maintenance](patterns/llm-wiki-maintenance.md)
