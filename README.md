@@ -1,6 +1,6 @@
 # agentic-ai-patterns
 
-**Lessons from building with agents.** 241 of them, from one person
+**Lessons from building with agents.** 244 of them, from one person
 building software with coding agents, mostly the hard way. Each file in
 `patterns/` is one lesson: what happened, why it happens, and when to expect
 it again.
@@ -116,6 +116,7 @@ MIT licensed.
 - [A Seam Is Decided Where Its Signal Is Visible](patterns/a-seam-is-decided-where-its-signal-is-visible.md)
 - [A Second Writer Satisfies Your Gate: Evidence in a Shared Store Names No Actor](patterns/a-second-writer-satisfies-your-gate.md)
 - [A Self-Report Must Not End What It Is Reporting On](patterns/self-report-must-not-end-what-it-reports-on.md)
+- [A Shipped Opt-In Is Not a Live Feature](patterns/a-shipped-opt-in-is-not-a-live-feature.md)
 - [A Small Model Chooses, It Does Not Rewrite](patterns/a-small-model-chooses-it-does-not-rewrite.md)
 - [A Small Model Moves the File and Drops the Behavior](patterns/a-small-model-moves-the-file-and-drops-the-behavior.md)
 - [A Source Assertion Pins Your Belief, Not the Behavior](patterns/a-source-assertion-pins-your-belief-not-the-behavior.md)
@@ -143,6 +144,7 @@ MIT licensed.
 - [An Agent Can Wire A Secret It Never Holds](patterns/an-agent-can-wire-a-secret-it-never-holds.md)
 - [An Agent Writes About Its Principal in the Third Person](patterns/an-agent-writes-about-its-principal-in-the-third-person.md)
 - [An Approval Crossing a Channel the Approver Can't See Needs Its Own Channel](patterns/eyes-free-approval-channel.md)
+- [An Approval That Guards Nothing Is Only Friction](patterns/an-approval-that-guards-nothing-is-only-friction.md)
 - [An Ask No Mode Shows Is Not a Gate](patterns/an-ask-no-mode-shows-is-not-a-gate.md)
 - [An Error Flag Owned by One Subsystem Must Never Gate Another Subsystem's Status Report](patterns/error-flag-gags-sibling-status.md)
 - [An Event Is Not a Cause](patterns/an-event-is-not-a-cause.md)
@@ -257,6 +259,7 @@ MIT licensed.
 - [Readiness Is Polled, Not Slept At](patterns/readiness-is-polled-not-slept.md)
 - [Registry Resolution: Alias-First, Dead-Ends Return the Next Hop](patterns/registry-resolution-alias-and-reach.md)
 - [Registry-Based System Monitoring](patterns/registry-based-monitoring.md)
+- [Removing a Prompt Moves the Gate](patterns/removing-a-prompt-moves-the-gate.md)
 - [Revoking an Identity Breaks Everything Still Authenticating As It, Quietly](patterns/revoking-an-identity-breaks-its-silent-dependents.md)
 - [ROADMAP.md Status Categories](patterns/roadmap-status-categories.md)
 - [Router/Worker Exfiltration Containment](patterns/router-worker-exfil-containment.md)
