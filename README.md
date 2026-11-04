@@ -1,6 +1,6 @@
 # agentic-ai-patterns
 
-**Lessons from building with agents.** 244 of them, from one person
+**Lessons from building with agents.** A growing set, from one person
 building software with coding agents, mostly the hard way. Each file in
 `patterns/` is one lesson: what happened, why it happens, and when to expect
 it again.
